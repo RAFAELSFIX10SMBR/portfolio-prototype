@@ -239,7 +239,7 @@ window.SITE = {
 
   /* Your portrait for the About section. "" = use the photo built into this file (search EMBEDDED IMAGES).
      Put a path here to replace it, e.g. "images/me.jpg". */
-  portrait: "",
+  portrait: "pas_rafael_3.4_merah.jpg",
   portraitColor: false,   /* false = black and white, color on hover. true = always in color */
 
   /* Selected work (from your CV). One line = one tile. Add or remove lines freely.
@@ -310,8 +310,8 @@ window.SITE = {
   <div class="hero-meta">
     <div data-r>
       <!-- EDIT: COPY (the rotating phrases are in the script: search "ROTATING WORDS") -->
-      <p class="rot">I <span class="rwrap"><span id="rw">design feeds</span></span></p>
-      <p class="shine">Information Systems undergraduate at Brawijaya&nbsp;University with over four years of graphic design behind me.</p>
+      <p class="rot">I <span class="rwrap"><span id="rw">Machine Learning</span></span></p>
+      <p class="shine">Information Systems undergraduate at Brawijaya University with over four years of graphic design behind me.</p>
     </div>
     <div class="who" data-r>
       <a class="btn mag" href="mailto:m.bayu1405@gmail.com">Email Me</a>
@@ -374,8 +374,9 @@ window.SITE = {
     <h2 class="bt">Main Skills</h2>
     <!-- EDIT: COPY (from your CV) -->
     <div class="skills">
+      <div class="sk" data-r><h3>Machine Learning Fundamentals</h3><p>EDA, Data Cleaning, Preprocessing, Modeling and Computer vision</p></div>
       <div class="sk" data-r><h3>Front-End Programming</h3><p>HTML, CSS, PHP, SQL and the Laravel framework</p></div>
-      <div class="sk" data-r><h3>Machine Learning Fundamentals</h3><p>Data cleaning, Preprocessing, Pipeline modeling and Computer vision</p></div>
+      <div class="sk" data-r><h3>Basic Android App Development</h3><p>Flutter</p></div>
       <div class="sk" data-r><h3>Graphic Design</h3><p>Figma, Canva, Adobe Premiere Pro, Capcut and other external design tools</p></div>
       <div class="sk" data-r><h3>Photography and Editing</h3><p>Event photography, plus photo and video editing for media campaigns</p></div>
     </div>
@@ -585,7 +586,7 @@ window.EMBEDDED = { portrait: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAA
   });
 
   /* ---------- 3. ROTATING WORDS (edit the list) ---------- */
-  var list=['design feeds','edit teaser videos','build with Laravel','clean data','take event photos','lead media teams'],wi=0,rw=document.getElementById('rw');
+  var list=[,'Basic App Development','Graphic Design','Photography','Video Editing','Front End Programming'],wi=0,rw=document.getElementById('rw');
   setInterval(function(){
     if(!rotOn) return;
     anime({targets:rw,translateY:[0,'-70%'],opacity:[1,0],duration:240,easing:'easeInQuad',complete:function(){
